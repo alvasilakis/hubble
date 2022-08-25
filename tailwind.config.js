@@ -7,17 +7,16 @@ module.exports = {
 	theme: {
     colors: {
       'main-bg-color'    : '#0A1628',
-			'main-purple'      : '#8655FF',
-			'main-purple-dark' : '#6A42CC',
-			'white'            : 'white',
-			'black'            : 'black',
-			'transparent'      : 'transparent',
-			'white-transparent': 'rgba(255, 255, 255, 0.20)',
-			'light-blue'       : '#EAFFFF',
-			'red'              : '#FB3D5D',
-			'blue'             : '#3AFCFC',
-			'pink'             : '#E359FF',
-
+      'main-purple'      : '#8655FF',
+      'main-purple-dark' : '#6A42CC',
+      'white'            : 'white',
+      'black'            : 'black',
+      'transparent'      : 'transparent',
+      'white-transparent': 'rgba(255, 255, 255, 0.20)',
+      'light-blue'       : '#EAFFFF',
+      'red'              : '#FB3D5D',
+      'blue'             : '#3AFCFC',
+      'pink'             : '#E359FF',
     },
 		fontFamily: {
 			'roobert': ['"Roobert"'],
