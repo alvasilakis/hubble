@@ -4,21 +4,21 @@ import Footer from './footer'
 import Head from 'next/head'
 
 export default function Layout({ children, metaTitle }) {
-	return (
+  return (
     <>
 
-			<Head>
-				<title>{metaTitle ? metaTitle : 'Hubble | We help organizations make sense of infinity'}</title>
-				<link rel="icon" href="/fav.png" />
-			</Head>
+      <Head>
+        <title>{metaTitle ? metaTitle : 'Hubble | We help organizations make sense of infinity'}</title>
+        <link rel="icon" href="/fav.png" />
+      </Head>
 
-			<USP/>
+      <USP/>
 
       <Navbar />
 
       <main>
-				{children}
-			</main>
+        {children}
+      </main>
 
       <Footer />
     </>
