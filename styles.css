@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-Light.woff2') format('woff2'),
+			url('public/fonts/Roobert-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-LightItalic.woff2') format('woff2'),
+			url('public/fonts/Roobert-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-Regular.woff2') format('woff2'),
+			url('public/fonts/Roobert-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-RegularItalic.woff2') format('woff2'),
+			url('public/fonts/Roobert-RegularItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-Medium.woff2') format('woff2'),
+			url('public/fonts/Roobert-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-MediumItalic.woff2') format('woff2'),
+			url('public/fonts/Roobert-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-SemiBold.woff2') format('woff2'),
+			url('public/fonts/Roobert-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-SemiBoldItalic.woff2') format('woff2'),
+			url('public/fonts/Roobert-SemiBoldItalic.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-Bold.woff2') format('woff2'),
+			url('public/fonts/Roobert-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-BoldItalic.woff2') format('woff2'),
+			url('public/fonts/Roobert-BoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-Heavy.woff2') format('woff2'),
+			url('public/fonts/Roobert-Heavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roobert';
+	src: url('public/fonts/Roobert-HeavyItalic.woff2') format('woff2'),
+			url('public/fonts/Roobert-HeavyItalic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+body {
+	background-color: #0A1628;
+	color: #fff;
+	font-family: 'Roobert';
+}
+
+.btn {
+	@apply
+		py-4
+		px-10
+		inline-block
+		text-center
+		text-white
+		rounded-md
+		tracking-[.01rem]
+		leading-none
+}
+
+.btn.btn-primary {
+	@apply
+		bg-main-purple
+		hover:bg-main-purple-dark
+		font-semibold
+		border
+		border-transparent
+}
+
+.btn.wide {
+	@apply
+		px-[80px]
+}
+
+.btn.btn-secondary {
+	@apply
+		bg-transparent
+		border
+		border-white
+		hover:bg-white
+		hover:text-main-bg-color
+}
+
+.btn.btn-arrow-primary {
+	@apply
+		bg-transparent
+		p-0
+}
+
+.btn.btn-arrow-primary span {
+	@apply
+		bg-transparent
+		p-0
+		flex
+		items-center
+		after:content-btn-arrow
+		after:block
+		after:ml-3
+}
+
+.btn.btn-arrow-secondary {
+	@apply
+		bg-transparent
+		p-0
+}
+
+.btn.btn-arrow-secondary span {
+	@apply
+		bg-transparent
+		p-0
+		flex
+		items-center
+		after:content-alt-btn-arrow
+		after:block
+		after:ml-3
+}
+
+.header-menu ul li {
+	@apply
+		mr-[45px]
+		hover:underline
+}
+
+.header-menu ul li:last-child {
+	@apply
+		mr-0
+}
+
+.footer-social a {
+	@apply
+		mr-[20px]
+}
+
+.single-footer-menu h4 {
+	@apply
+		mb-[20px]
+		block
+		text-[#EAFFFF]
+		text-lg
+		opacity-70
+}
+
+.single-footer-menu ul li {
+	@apply
+		mb-[10px]
+}
+
+.single-footer-menu ul li a {
+	@apply
+		hover:underline
+}
+
+.copyright-menu ul li {
+	@apply
+		mr-[45px]
+		hover:underline
+		text-light-blue
+}
+
+.copyright-menu ul li:last-child {
+	@apply
+		mr-0
+}
+
+.single-header-tab {
+	@apply
+		py-[15px]
+		px-[40px]
+		inline-block
+		text-center
+		text-white
+		rounded-md
+		tracking-[.01rem]
+		bg-transparent
+		hover:underline
+		disabled:bg-main-purple
+		hover:disabled:no-underline
+		transition
+		font-semibold
+		border
+		border-transparent
+}
+
+.usp-carousel .swiper-wrapper,
+.logo-carousel .swiper-wrapper {
+	@apply
+		ease-linear
+}
